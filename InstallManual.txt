@@ -1,0 +1,65 @@
+■Git導入手順
+　・参考URL
+　　http://sourceforge.jp/magazine/09/06/19/0340248
+　　http://www8.atwiki.jp/git_jp/
+
+　・各インストーラの最新版
+　　http://sourceforge.jp/projects/tortoisegit/wiki/FrontPage
+
+１．Gitのインストール
+　・Git-1.6.5.1-preview20091022.exeをインストールする
+
+２．TortoiseGitのインストール
+　・TortoiseGit-1.3.2.0-32bit.msiをインストールする
+
+３．TortoiseGitの日本語化
+　・tortoisegit_1.3.2.0_lang_jp_r1.zip中のdll2個を
+　　TortoiseGitインストールディレクトリ中のlanguageフォルダにコピー
+
+　・エクスプローラの右クリックコンテキストメニューの
+　　「TortoiseGit」→「settings」
+　　「General」のLanguageを日本語にセットしてOK
+
+４．TortoiseGitのユーザー名設定
+　・エクスプローラの右クリックコンテキストメニューの
+　　「TortoiseGit」→「設定」
+　　「Git」→「Config」のUser InfoのNameを設定する
+
+■簡単な使い方
+
+１．リポジトリの新規作成
+　・作成対象のフォルダを右クリック→「Git ここにリポジトリを作成」
+　　※ネットワーク越（\\<server>\～)だと作成できないことがあるので、
+　　　\\<server>\～をネットワークドライブに割り当ててから作成する
+
+２．リポジトリにファイルを追加
+　・作成したリポジトリのフォルダを右クリック→「Git コミット」
+　　Messageにコミットログを記載
+　　下に表示されているファイル一覧にチェックを付けてOK
+
+３．ローカルにリポジトリをCloneする
+　・作成したいフォルダを開いて、右クリック→「Git 複製(Clone)」
+　　Urlにmasterのリポジトリを設定
+　　Directoryは自動補完されるが、設定することも可能
+　　OKクリックで複製ができる
+
+４．最新版の取得
+　・ローカルのクローンフォルダで右クリック→「TortoiseGit」→「Pull」
+
+５．修正版をコミット
+　・作成したリポジトリのフォルダを右クリック→「Git コミット」
+　　Messageにコミットログを記載
+　　下に表示されているファイル一覧にチェックを付けてOK
+
+　・サーバーにアップする際は、コミットしてから
+　　「TortoiseGit」→「Push」
+　　もしくは、コミット後のダイアログで「Push」をクリック
+
+※ローカルでの一時ファイル等、コミットする必要がないファイル
+　コミットしてはいけないファイル等は.gitignoreファイルに記載する
+
+■配布用にエクスポート
+　・最新版にしてからフォルダを右クリック→「TortoiseGit」→「エクスポート」
+
+■詳しい使い方
+　http://progit.org/book/ja/
